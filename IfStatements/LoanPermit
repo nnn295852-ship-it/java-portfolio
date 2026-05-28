@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class LoanPermit {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("What is your credit score?");
+        int score = myObj.nextInt();
+        if (score >= 700) {
+            System.out.println("You have a stable job. True or false?");
+            boolean job = myObj.nextBoolean();
+            if (job) {
+                System.out.println("What is your income?");
+                int income = myObj.nextInt();
+                if (income >= 150000) {
+                    System.out.println("Loan Approved");
+                } else if (income >= 50000) {
+                    System.out.println("Approved with Conditions");
+                } else {
+                    System.out.println("Loan Rejected");
+                }
+            } else {
+                System.out.println("Loan Rejected");
+            }
+        } else {
+            System.out.println("Loan Rejected");
+        }
+    }
+}
