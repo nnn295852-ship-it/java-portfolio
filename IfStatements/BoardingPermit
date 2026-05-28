@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class BoardingPermit {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("You have chinese visa. True or false?");
+        boolean visa = myObj.nextBoolean();
+        if (visa) {
+            System.out.println("You have return ticket. True or false?");
+            boolean rt = myObj.nextBoolean();
+            if (rt) {
+                System.out.println("You receive COVID vaccinations. True or false?");
+                boolean vac = myObj.nextBoolean();
+                if (vac) {
+                    System.out.println("Boarding permitted");
+                } else {
+                    System.out.println("You can not board");
+                } 
+            }else {
+                System.out.println("You can not board");
+            } 
+        } else {
+            System.out.println("You can not board");
+        }
+    }
+}
