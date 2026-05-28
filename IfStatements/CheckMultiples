@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class CheckMultiples {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int x = myObj.nextInt();
+        int y = myObj.nextInt();
+        int divide = x%y;
+        if (divide <=0) {
+            System.out.println(x + " is a multiple of " + y);
+        } else {
+            System.out.println(x + " is not a multiple of " + y);
+        }
+    System.out.println("Remainder: " + x%y);
+    }
+}
