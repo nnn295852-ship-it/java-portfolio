@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Greater {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int x = myObj.nextInt();
+        int y = myObj.nextInt();
+        System.out.print("x = " + x + ",");
+        System.out.println("y = " + y);
+        if (x > y) {
+           System.out.println("x is greater than y");
+        } else {
+           System.out.println("y is greater than x");
+        }
+    }
+}
